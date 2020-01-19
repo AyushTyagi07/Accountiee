@@ -1,0 +1,62 @@
+//inside for loop
+
+sale += rows[i].Amount;
+                                                    datre.push(rows[i].Date);
+                                                    
+                                                    if( fdate.localeCompare(String(rows[i].Date)) == 0 && i != (rows.length-1))
+                                                    {
+                                                        
+                                                        ct += 1;
+                                                        tam += rows[i].Amount;
+                                                        pen += rows[i].Pending;
+                                                        console.log(tam);
+                                                    }
+                                                    else{
+                                                        
+                                                        if(i==0){
+                                                            i=i+1;
+                                                            ct =1;
+                                                            tam +=rows[0].Amount;
+                                                            
+                                                            resultEl.innerHTML += "<tr><td><a onclick=tdetail("+(i-1)+"); >"+rows[i-1].Date.toString()+"</a></td><td>"+ct+"</td><td>"+tam+"</td><td>"+pen+"</td><td><button type='button' onclick=deletep("+rows[i-1].TID+") class='btn btn-outline-danger'><i class='fa fa-rss'></i>&nbsp; Delete</button></td></tr>";
+                                                            break
+                                                        }
+                                                        if(i==(rows.length-1)){
+                                                            if( fdate.localeCompare(String(rows[i].Date)) != 0){
+                                                            resultEl.innerHTML += "<tr><td><a onclick=tdetail("+(i-1)+"); >"+rows[i-1].Date.toString()+"</a></td><td>"+ct+"</td><td>"+tam+"</td><td>"+pen+"</td><td><button type='button' onclick=deletep("+rows[i-1].TID+") class='btn btn-outline-danger'><i class='fa fa-rss'></i>&nbsp; Delete</button></td></tr>";
+                                                            i=i+1;
+                                                            tam =rows[i-1].Amount;
+                                                            
+                                                            ct=1;
+                                                            resultEl.innerHTML += "<tr><td><a onclick=tdetail("+(i-1)+"); >"+rows[i-1].Date.toString()+"</a></td><td>"+ct+"</td><td>"+tam+"</td><td>"+pen+"</td<td><button type='button' onclick=deletep("+rows[i-1].TID+") class='btn btn-outline-danger'><i class='fa fa-rss'></i>&nbsp; Delete</button></td></tr>";
+                                                            break
+                                                            }
+                                                            else{
+                                                                tam +=rows[i].Amount;
+                                                            
+                                                            ct+=1;
+                                                                resultEl.innerHTML += "<tr><td><a onclick=tdetail("+(i)+"); >"+rows[i].Date.toString()+"</a></td><td>"+ct+"</td><td>"+tam+"</td><td>"+pen+"</td><td><button type='button' onclick=deletep("+rows[i].TID+") class='btn btn-outline-danger'><i class='fa fa-rss'></i>&nbsp; Delete</button></td></tr>";
+                                                            }
+                                                            
+                                                        }
+                                                        
+                                                        var cd = String(rows[i-1].Date)
+                                                        var res = cd.slice(cd.length-2, cd.length);
+                                                        res = parseInt(res);
+                                                        console.log("DATE"+res);
+                                                        var days = currentdate - res;
+                                                    console.log(days);
+                                                    if(days>=15){
+                                                        resultEl +="<tr style='background:red;color:white;'>";
+                                                        var mess = "It has been 15 days since "+String(rows[i].Name)+"Paid his pending"+String(rows[i].Amount)
+                                                        const myNotification = new window.Notification("Accountiee", mess)
+                                                    }
+                                                    else{
+                                                        resultEl +="<tr>"
+                                                    }
+                                                        resultEl.innerHTML += "<tr><td><a onclick=tdetail("+(i-1)+"); >"+rows[i-1].Date.toString()+"</a></td><td>"+ct+"</td><td>"+tam+"</td><td>"+pen+"</td<td><button type='button' onclick=deletep("+rows[i-1].TID+") class='btn btn-outline-danger'><i class='fa fa-rss'></i>&nbsp; Delete</button></td></tr>";
+                                                        fdate = String(rows[i].Date);//Date Table
+                                                        tam=0;
+                                                        pen =0;
+                                                        ct =0;
+                                                    }

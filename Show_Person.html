@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Acountie</title>
+    <meta name="description" content="Acountie - Acounting Software">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-icon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="Design/vendors/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Design/vendors/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Design/vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="Design/vendors/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="Design/vendors/selectFX/css/cs-skin-elastic.css">
+    <link rel="stylesheet" href="Design/vendors/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="Design/vendors/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css">
+
+    <link rel="stylesheet" href="Design/assets/css/style.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <!-- Left Panel -->
+    
+    <aside id="left-panel" class="left-panel">
+        <nav class="navbar navbar-expand-sm navbar-default">
+    
+            <div class="navbar-header">
+                <a class="navbar-brand" href="./"><img src="Design/logo.png" alt="Logo" height="130px" width="160px"></a>
+                <a class="navbar-brand hidden" href="./"><img src="images/logo2.png" alt="Logo"></a>
+                <h2 style="color: white;"><b style="color: tomato;">KOWCUB</b> FISH</h2>
+            </div>
+    
+            <div id="main-menu" class="main-menu collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html"> <i class="menu-icon fa fa-home"></i>Dashboard </a>
+                    </li>
+                    <h3 class="menu-title">Entries</h3><!-- /.menu-title -->
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-users"></i>Person</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="fa fa-plus"></i><a href="Add_person.html" id="addpbtn">Add</a></li>
+                            <li><i class="fa fa-id-badge"></i><a href="Show_Person.html" id="showpbtn">Show</a></li>
+                        </ul>
+                       <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Entries</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="fa fa-plus"></i><a href="Add_Entry.html" id="addebtn">Add</a></li>
+                            <li><i class="fa fa-table"></i><a href="Show_Entries.html" id="showebtn">Show</a></li>
+                        </ul>
+                    </li>
+    
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Fish</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="fa fa-plus"></i><a href="Add_Stock.html" id="addebtn">Add</a></li>
+                            <li><i class="fa fa-table"></i><a href="Show_Stock.html" id="showebtn">Show</a></li>
+                        </ul>
+                    </li>
+    
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Employee</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="fa fa-plus"></i><a href="Add_Employee.html" id="addebtn">Pay</a></li>
+                            <li><i class="fa fa-table"></i><a href="Show_Employee.html" id="showebtn">Payments</a></li>
+                            <li><i class="fa fa-table"></i><a href="Employee_List.html" id="showebtn">Show</a></li>
+                        </ul>
+                    </li>
+                    </li>
+                    <li>
+                        <a href="payments.html"> <i class="menu-icon fa fa-home"></i>Payments </a>
+                    </li>
+                    
+                    
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+    </aside>
+    
+    <!-- Left Panel -->
+    
+    <!-- Right Panel -->
+    
+    <div id="right-panel" class="right-panel">
+    
+        <!-- Header-->
+        <header id="header" class="header">
+    
+            <div class="header-menu">
+    
+                <div class="col-sm-7">
+                    <a id="menuToggle" class="menutoggle pull-left"><i class="fa fa fa-tasks"></i></a>
+                    <div class="header-left">
+                        <button class="search-trigger"><i class="fa fa-search"></i></button>
+                        <div class="form-inline">
+                            <form class="search-form">
+                                <input class="form-control mr-sm-2" type="text" placeholder="Search ..." aria-label="Search">
+                                <button class="search-close" type="submit"><i class="fa fa-close"></i></button>
+                            </form>
+                        </div>
+    
+                        
+                    </div>
+                </div>
+    
+                <div class="col-sm-5">
+                    <div class="user-area dropdown float-right">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="user-avatar rounded-circle" src="Design/logo.png" alt="User Avatar">
+                        </a>
+    
+                        <div class="user-menu dropdown-menu">
+    
+                            <a class="nav-link" href="#"><i class="fa fa-user"></i> Notifications <span class="count">13</span></a>
+    
+                            <a class="nav-link" href="settings.html"><i class="fa fa-cog"></i> Settings</a>
+    
+                            <a class="nav-link" href="#" onclick="window.close();"><i class="fa fa-power-off"></i> Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </header>
+        <!-- Header-->
+
+        <div class="breadcrumbs">
+            <div class="col-sm-4">
+                <div class="page-header float-left">
+                    <div class="page-title">
+                        <h1>Records</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="page-header float-right">
+                    <div class="page-title">
+                        <ol class="breadcrumb text-right">
+                            <li><a href="#">Dashboard</a></li>
+                            <li><a href="#">Entries</a></li>
+                            <li class="active">Show People</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content mt-3">
+            <div class="animated fadeIn">
+                <div class="row">
+
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <strong class="card-title">People</strong>
+                            </div>
+                            <div class="card-body">
+                                <table id="bootstrap-data-table-export" class="table table-striped table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Action</th>
+                                            <th>Name</th>
+                                            <th>Abbr</th>
+                                            <th>Contact</th>
+                                            <th>Balance</th>
+                                        </tr>
+                                    </thead>
+                                    
+                                    <tbody id="tresult">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div><!-- .animated -->
+        </div><!-- .content -->
+
+
+    </div><!-- /#right-panel -->
+    <script>
+        const path = require("path")
+    var knex = require("knex")({
+        client: "sqlite3",
+        connection: {
+            filename: path.join(__dirname, 'engine/datast.sqlite3')
+        }
+    });
+    let result = knex("Person")
+    result.then(function(rows){
+        let resultEl = document.getElementById("tresult");
+        console.log(rows);
+        for(var i = 0; i < rows.length;i++){
+            resultEl.innerHTML += "<tr><td><input type='checkbox'></td><td><a href='persondetail.html' onclick='return storeperson("+String(rows[i].PID)+");'>"+rows[i].Name.toString()+"</a></td><td>"+rows[i].Abbr.toString()+"</td><td>"+rows[i].Contact.toString()+"</td><td>Rs"+rows[i].Balance.toString()+"</td><td><button type='button' onclick=deletep("+rows[i].PID+") class='btn btn-outline-danger'><i class='fa fa-rss'></i>&nbsp; Delete</button></td></tr>";
+        }
+    })
+    </script>
+    <script>
+        function deletep(pid){
+            const path = require("path")
+    var knex = require("knex")({
+        client: "sqlite3",
+        connection: {
+            filename: path.join(__dirname, 'engine/datast.sqlite3')
+        }
+    });
+    var txt;
+  if (confirm("Confirm Delete !!")) {
+
+    knex('Person').where('PID', pid).del()
+        .then(function(resp) {
+                    console.log('Deleted.');
+                    document.location.reload(true)
+                    })
+        .catch(function(err) {console.error(err);
+                    });
+        } 
+  else {
+    return;
+  }
+}
+       
+    </script>
+    <script type="text/javascript">
+    
+        function storeperson(pid){
+            const electron = require("electron");
+            const ipc = electron.ipcRenderer;
+
+            ipc.send("PersonID",pid)
+            ipc.on("PersonDone", function(){
+            console.log("Sent");
+        });
+    }
+    </script>
+
+    <!-- Right Panel -->
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+    <!-- normal script imports etc  -->   
+
+    <script src="Design/vendors/jquery/dist/jquery.min.js"></script>
+    <script src="Design/vendors/popper.js/dist/umd/popper.min.js"></script>
+    <script src="Design/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="Design/assets/js/main.js"></script>
+    <script src="main.js"></script>
+
+
+    <script src="Design/vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="Design/vendors/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="Design/vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="Design/vendors/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js"></script>
+    <script src="Design/vendors/jszip/dist/jszip.min.js"></script>
+    <script src="Design/vendors/pdfmake/build/pdfmake.min.js"></script>
+    <script src="Design/vendors/pdfmake/build/vfs_fonts.js"></script>
+    <script src="Design/vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="Design/vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="Design/vendors/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+    <script src="Design/assets/js/init-scripts/data-table/datatables-init.js"></script>
+
+    <!-- Insert this line after script imports -->
+<script>if (window.module) module = window.module;</script>
+</body>
+
+</html>

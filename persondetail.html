@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Acountie</title>
+    <meta name="description" content="Acountie - Acounting Software">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-icon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="Design/vendors/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Design/vendors/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Design/vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="Design/vendors/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="Design/vendors/selectFX/css/cs-skin-elastic.css">
+
+    <link rel="stylesheet" href="Design/assets/css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <!-- Left Panel -->
+    
+    <aside id="left-panel" class="left-panel">
+        <nav class="navbar navbar-expand-sm navbar-default">
+    
+            <div class="navbar-header">
+                <a class="navbar-brand" href="./"><img src="Design/logo.png" alt="Logo" height="130px" width="160px"></a>
+                <a class="navbar-brand hidden" href="./"><img src="images/logo2.png" alt="Logo"></a>
+                <h2 style="color: white;"><b style="color: tomato;">KOWCUB</b> FISH</h2>
+            </div>
+    
+            <div id="main-menu" class="main-menu collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html"> <i class="menu-icon fa fa-home"></i>Dashboard </a>
+                    </li>
+                    <h3 class="menu-title">Entries</h3><!-- /.menu-title -->
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-users"></i>Person</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="fa fa-plus"></i><a href="Add_person.html" id="addpbtn">Add</a></li>
+                            <li><i class="fa fa-id-badge"></i><a href="Show_Person.html" id="showpbtn">Show</a></li>
+                        </ul>
+                       <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Entries</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="fa fa-plus"></i><a href="Add_Entry.html" id="addebtn">Add</a></li>
+                            <li><i class="fa fa-table"></i><a href="Show_Entries.html" id="showebtn">Show</a></li>
+                        </ul>
+                    </li>
+    
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Fish</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="fa fa-plus"></i><a href="Add_Stock.html" id="addebtn">Add</a></li>
+                            <li><i class="fa fa-table"></i><a href="Show_Stock.html" id="showebtn">Show</a></li>
+                        </ul>
+                    </li>
+    
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Employee</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="fa fa-plus"></i><a href="Add_Employee.html" id="addebtn">Pay</a></li>
+                            <li><i class="fa fa-table"></i><a href="Show_Employee.html" id="showebtn">Payments</a></li>
+                            <li><i class="fa fa-table"></i><a href="Employee_List.html" id="showebtn">Show</a></li>
+                        </ul>
+                    </li>
+                    </li>
+                    <li>
+                        <a href="payments.html"> <i class="menu-icon fa fa-home"></i>Payments </a>
+                    </li>
+                    
+                    
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+    </aside>
+    
+    <!-- Left Panel -->
+    
+    <!-- Right Panel -->
+    
+    <div id="right-panel" class="right-panel">
+    
+        <!-- Header-->
+        <header id="header" class="header">
+    
+            <div class="header-menu">
+    
+                <div class="col-sm-7">
+                    <a id="menuToggle" class="menutoggle pull-left"><i class="fa fa fa-tasks"></i></a>
+                    <div class="header-left">
+                        <button class="search-trigger"><i class="fa fa-search"></i></button>
+                        <div class="form-inline">
+                            <form class="search-form">
+                                <input class="form-control mr-sm-2" type="text" placeholder="Search ..." aria-label="Search">
+                                <button class="search-close" type="submit"><i class="fa fa-close"></i></button>
+                            </form>
+                        </div>
+    
+                        
+                    </div>
+                </div>
+    
+                <div class="col-sm-5">
+                    <div class="user-area dropdown float-right">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="user-avatar rounded-circle" src="Design/logo.png" alt="User Avatar">
+                        </a>
+    
+                        <div class="user-menu dropdown-menu">
+    
+                            <a class="nav-link" href="#"><i class="fa fa-user"></i> Notifications <span class="count">13</span></a>
+    
+                            <a class="nav-link" href="settings.html"><i class="fa fa-cog"></i> Settings</a>
+    
+                            <a class="nav-link" href="#" onclick="window.close();"><i class="fa fa-power-off"></i> Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </header>
+    <!-- Header-->
+
+        <div class="breadcrumbs">
+            <div class="col-sm-4">
+                <div class="page-header float-left">
+                    <div class="page-title">
+                        <h1>Person</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="page-header float-right">
+                    <div class="page-title">
+                        <ol class="breadcrumb text-right">
+                            <li><a href="index.html">Dashboard</a></li>
+                            <li><a href="Show_Person.html">Show Person</a></li>
+                            <li class="active">Details</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+<div class="content mt-3">
+        <div class="animated fadeIn">
+        	<div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fa fa-user"></i><strong class="card-title pl-2">Person Profile</strong>
+                        </div>
+                        <div class="card-body">
+                            <div class="mx-auto d-block">
+                                <img class="rounded-circle mx-auto d-block" src="Design/admin.jpg" alt="Card image cap">
+                                <h5 class="text-sm-center mt-2 mb-1" id="PName"></h5>
+                                <div class="location text-sm-center"id="PAddress"><i class="fa fa-map-marker"></i></div>
+                            </div>
+                            <hr>
+                            <div class="card-text text-sm-center">
+                                <a href="#" id="PContact"></a>
+                            </div>
+                            <div class="card-text text-sm-center">
+                                Sales :<a href="#" style="color: green;" id="PSale"></a>
+                                Pending : <a href="#" style="color: red;" id="Pending"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <strong class="card-title">Records</strong>
+                        </div>
+                        <div class="card-body">
+                            <table class="table" id="tdet">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">Date</th>
+                                        <th scope="col">Product</th>
+                                        <th scope="col">Amount</th>
+                                        <th scope="col">Balance</th>
+                                        <th scope="col">Action</th>
+                                        
+                                    </tr>
+                                </thead>
+
+                                <script>
+                                    var today = new Date();
+                                    var dateto = String(String(today.getFullYear())+'-'+String(today.getMonth()+1)+'-'+String(today.getDate())); 
+                                    console.log(dateto)
+                                    var currentdate = parseInt(String(today.getDate()))
+                                    console.log(currentdate)
+                                    var sale = 0;
+                                    var name ;
+                                    var contact;
+                                    var address;
+                                    var pending=0;
+                                    var gpid;
+                                    var datre = [];
+                                    const electron = require("electron");
+                                    const ipc = electron.ipcRenderer;
+                                    var path = require("path");
+                                    var knex = require("knex")({
+                                        client: "sqlite3",
+                                        connection: {
+                                            filename: path.join(__dirname, 'engine/datast.sqlite3')
+                                        }});
+                                    document.addEventListener("DOMContentLoaded", function(){
+                                        ipc.send("Loaded")
+                                        console.log("Loaded");
+                                        ipc.on("resultSent", function(evt, result){
+                                            console.log("received");
+                                            let resultEl = document.getElementById("result");
+                                            console.log(result);
+
+                                            document.getElementById("PName").innerHTML = result[0].Name;
+                                            document.getElementById("PContact").innerHTML = result[0].Contact;
+                                            document.getElementById("PAddress").innerHTML = result[0].Address;
+                                        
+
+                                            name = result[0].Name;
+                                            contact= result[0].Contact;
+                                            address= result[0].Address;
+                                            pending = result[0].Balance;
+                                            sale =result[0].Sale;
+
+                                            var p = result[0].PID;
+                                            gpid=p;
+                                            
+                                            let trans = knex("Transaction").where("PID",p)
+                                            trans.then(function(rows){
+                                                var fdate = String(rows[0].Date);
+                                                let resultEl = document.getElementById("tresult");
+                                                console.log(rows);
+                                                var csale=0;
+                                                var pen=0;
+                                                var counter=0;
+                                                for(var i = 0; i < rows.length;i++){
+                                                    datre.push(rows[i].Date);
+                                                    console.log(rows[i].Date);
+                                                    console.log(datre[i]);
+                                                    while(fdate.localeCompare(String(rows[i].Date))==0){
+                                                        csale += rows[i].Amount;
+                                                        counter += 1;
+                                                        fdate = String(rows[i].Date);
+                                                        datre.push(rows[i].Date);
+                                                        i++;
+                                                        if(i == rows.length){
+                                                            resultEl.innerHTML += "<tr><td><a onclick=tdetail("+(i)+"); >"+rows[i-1].Date.toString()+"</a></td><td>"+counter+"</td><td>"+csale+"</td><td>"+rows[i-1].Balance+"</td></tr>";    
+                                                            break;}
+                                                    }
+                                                    if(i == rows.length){break;}
+                                                    else{
+                                                       
+                                                        resultEl.innerHTML += "<tr><td><a onclick=tdetail("+(i-1)+"); >"+rows[i-1].Date.toString()+"</a></td><td>"+counter+"</td><td>"+csale+"</td><td>"+rows[i-1].Balance+"</td></tr>";
+                                                        counter = 0;
+                                                        csale =0;
+                                                        fdate = String(rows[i].Date);
+                                                        i = i-1;
+                                                    }
+                                                }
+                                                console.log(datre[3])
+                                                console.log(sale);
+                                                document.getElementById("PSale").innerHTML = result[0].Sale;
+                                                document.getElementById("Pending").innerHTML = result[0].Balance;
+                                                
+                                            })
+                                                
+                                            
+                                        });
+                                    });
+                                </script>
+                                <tbody id="tresult">
+                                    
+                                </tbody>
+                            </table>
+                            
+
+                        </div>
+                        
+                    </div>
+                    <div id="foot"></div>
+                        
+
+                </div>
+
+            </div>
+        </div><!-- .animated -->
+</div>
+
+<script>
+    function tdetail(x){
+        var path = require("path");
+        var knex = require("knex")({
+        client: "sqlite3",
+            connection: {
+                    filename: path.join(__dirname, 'engine/datast.sqlite3')
+                    }});
+                                        console.log(datre[x]);
+                                        console.log(x);
+                                        document.getElementById("PName").innerHTML = name;
+                                        document.getElementById("PContact").innerHTML = contact;
+                                        document.getElementById("PAddress").innerHTML = address;
+                                        document.getElementById("PSale").innerHTML = sale;
+                                        document.getElementById("Pending").innerHTML = pending;
+                                        var trasdet = knex("Transaction").where({Date:datre[x], PID:gpid})
+                                        trasdet.then(function(rows){
+                                        tabl = document.getElementById("tdet");
+                                        tabl.innerHTML = "<thead class='thead-dark'><tr><th scope='col'>TID</th><th scope='col'>Product</th><th scope='col'>Amount</th><th scope='col'>Pending Balance</th></tr></thead>"
+                                        for(var i = 0; i < rows.length;i++){
+                                            if(String(rows[i].Product).localeCompare("Payment")==0)
+                                            {
+                                                tabl.innerHTML += "<tr style='color:green;'><td>"+rows[i].TID+"</td><td>"+rows[i].Product+"</td><td>"+rows[i].Amount+"</td><td>"+rows[i].Balance+"</td></tr>"; //products Table
+                                            }
+                                            else{
+                                                tabl.innerHTML += "<tr><td>"+rows[i].TID+"</td><td>"+rows[i].Product+"</td><td>"+rows[i].Amount+"</td><td>"+rows[i].Balance+"</td></tr>"; //products Table
+                                            }
+                                            
+                                        }
+                                        }) 
+                                        document.getElementById("foot").innerHTML = '<div class="card-footer"><label id="pdf-path"></label><button type="button" class="btn btn-success" id="printpdf"><i class="fa fa-print"></i>&nbsp; Print</button>';
+
+                                    }
+</script>
+
+
+<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+<!-- normal script imports etc  -->   
+
+    <script src="Design/vendors/jquery/dist/jquery.min.js"></script>
+    <script src="Design/vendors/popper.js/dist/umd/popper.min.js"></script>
+    <script src="Design/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="Design/assets/js/main.js"></script>
+
+
+    <script src="Design/vendors/chart.js/dist/Chart.bundle.min.js"></script>
+    <script src="Design/assets/js/dashboard.js"></script>
+    <script src="Design/assets/js/widgets.js"></script>
+    <script src="Design/vendors/jqvmap/dist/jquery.vmap.min.js"></script>
+    
+    <!-- Insert this line after script imports -->
+<script>if (window.module) module = window.module;</script>
+</body>
+</html>

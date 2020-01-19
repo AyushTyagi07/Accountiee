@@ -1,0 +1,37 @@
+{
+  "name": "acountie",
+  "version": "1.0.0",
+  "description": "Application for Ledger Account Management",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "rebuild": "electron-rebuild -f -w sqlite3",
+    "build": "electron-builder build --win --publish never",
+    "deploy": "electron-builder build --win --publish always"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AyushTyagi07/Accountiee.git"
+  },
+  "author": "Ayush Tyagi",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/AyushTyagi07/Accountiee/issues"
+  },
+  "devDependencies": {
+    "electron": "^7.1.9",
+    "electron-builder": "^22.2.0",
+    "electron-rebuild": "^1.8.8"
+  },
+  "dependencies": {
+    "expressjs": "^1.0.1",
+    "knex": "^0.20.7",
+    "node-gyp": "^6.1.0",
+    "node-pre-gyp": "^0.14.0",
+    "python-shell": "^1.0.8",
+    "save": "^2.4.0",
+    "sqlite3": "^4.1.1",
+    "sweetalert": "^2.1.2"
+  },
+  "homepage": "https://github.com/AyushTyagi07/Accountiee#readme"
+}
